@@ -1,10 +1,7 @@
 ## Python com OO
 | Conhecendo a linguagem | [X] |
-| ----------------------------------  | --- |
 | Aprofundar na orientação a objetos  | [X] |
-| ------------------------------  | --- |
 | Trabalhar com formatos de dados | [] |
-| ------------------------------  | --- |
 | Fazer testes automatizados      | [] |
 
 
