@@ -12,3 +12,12 @@
 - Vai tirar todo o espaco em branco
 - Tirar espaco vazio a esquerda
 - Tirar espaco vazio a direita
+
+## search()
+- Encontrou aquele padrao
+
+## search()
+- Se bate com o padrao encontrado
+
+## group()
+- String que foi encontrado
