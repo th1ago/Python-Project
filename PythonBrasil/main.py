@@ -1,7 +1,8 @@
 """testando"""
-from Cpf import Cpf
+from cpf_cnpj import CpfCnpj
 
-CPF = "15616987923"
-objeto_cpf = Cpf(CPF)
+exemplo_cpf = "12345678901"
+documento = CpfCnpj(exemplo_cpf, 'cpf')
 
-print(objeto_cpf)
+#exemplo_cnpj = "3537983800110112"
+#documento = CpfCnpj(exemplo_cnpj, 'cnpj')
