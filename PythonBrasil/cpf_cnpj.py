@@ -5,7 +5,7 @@ class CpfCnpj:
     """criando o inicializador"""
     def __init__(self, documento, tipo_documento):
         self.tipo_documento = tipo_documento
-        documento = str(documento)
+        self.documento = str(documento)
         if self.tipo_documento == "cpf":
             if self.cpf_eh_valido(documento):
                 self.cpf = documento
@@ -31,9 +31,17 @@ class CpfCnpj:
         """formatando o cpf"""
         mascara = CPF()
         return mascara.mask(self.cpf)
+    
+    def format_cnpj(self):
+        """formatando o cnpj"""
+        mascara = CNPJ()
+        return mascara.mask(self.cnpj)
 
     def __str__(self):
-        return self.format_cpf()
+        if self.tipo_documento == "cpf":
+            return self.format_cpf()
+        else:
+            return self.format_cnpj()
 
     def cnpj_eh_valido(self, cnpj):
         """validando o cnpj"""
