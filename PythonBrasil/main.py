@@ -9,6 +9,7 @@
 
 from TelefoneBr import TelefoneBr
 
-telefone = "21333326481234"
+telefone = "213326481234"
 
 telefone_objeto = TelefoneBr(telefone)
+print(telefone_objeto)
