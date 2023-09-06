@@ -2,7 +2,7 @@
 from validate_docbr import CPF, CNPJ
 
 class Documento:
-    """e"""
+    """criando class documento"""
     @staticmethod
     def criar_documento(documento):
         """e"""
@@ -15,7 +15,7 @@ class Documento:
             raise ValueError("Quantidade digitos incorretos")
 
 class DocCpf:
-    """e"""
+    """verificando o cpf"""
     def __init__(self, documento):
         if self.valida(documento):
             self.cpf = documento
@@ -26,17 +26,17 @@ class DocCpf:
         return self.format()
 
     def valida(self, documento):
-        """e"""
+        """validando o cpf"""
         validador = CPF()
         return validador.validate(documento)
 
     def format(self):
-        """e"""
+        """formatando o cpf"""
         mascara = CPF()
         return mascara.mask(self.cpf)
 
 class DocCnpj:
-    """e"""
+    """verificando o cnpj"""
     def __init__(self, documento):
         if self.valida(documento):
             self.cnpj = documento
@@ -47,11 +47,11 @@ class DocCnpj:
         return self.format()
 
     def valida(self, documento):
-        """e"""
+        """validando o cnpj"""
         validador = CNPJ()
         return validador.validate(documento)
 
     def format(self):
-        """e"""
+        """formatando o cnpj"""
         mascara = CNPJ()
         return mascara.mask(self.cnpj)
