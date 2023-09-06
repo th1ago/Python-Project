@@ -6,6 +6,10 @@ class datas:
     def __init__(self) -> None:
         self.momento_cadastro = datetime.today()
 
+    def __str__(self):
+        """retorno da data"""
+        return self.format_data()
+
     def mes_cadastro(self):
         """lista do meses"""
         meses_do_ano = [
@@ -16,7 +20,7 @@ class datas:
         ]
         mes_corrente = self.momento_cadastro.month -1
         return meses_do_ano[mes_corrente]
-    
+
     def dia_semana(self):
         """lista dos dias da semana"""
         dia_semana_lista = [
@@ -29,5 +33,10 @@ class datas:
 
     def format_data(self):
         """formatando padra br"""
+        # dias do mes
+        # meses em formato numerio
+        # Ano em formato de 4 digitos
+        # Hora em formato decimal
+        # Minutos em formato decimal
         data_formatada = self.momento_cadastro.strftime("%d/%m/%Y %H:%M")
-        print(data_formatada)
+        return data_formatada

@@ -5,7 +5,12 @@
 # documento = Documento.criar_documento(exemplo_cnpj)
 # print(documento)
 
-from TelefoneBr import TelefoneBr
-telefone = "213326481234"
-telefone_objeto = TelefoneBr(telefone)
-print(telefone_objeto)
+# from TelefoneBr import TelefoneBr
+# telefone = "213326481234"
+# telefone_objeto = TelefoneBr(telefone)
+# print(telefone_objeto)
+
+from datas import datas
+
+cadastro = datas()
+print(cadastro)
