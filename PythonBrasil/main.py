@@ -10,7 +10,12 @@
 # telefone_objeto = TelefoneBr(telefone)
 # print(telefone_objeto)
 
-from datas import datas
+# from datas import datas
+# cadastro = datas()
+# print(cadastro.tempo_cadastro())
 
-cadastro = datas()
-print(cadastro)
+from cep import busca_cep
+
+cep = "25689328"
+obj_cep = busca_cep(cep)
+print(obj_cep)

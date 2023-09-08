@@ -1,5 +1,5 @@
 """validando datas"""
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class datas:
     """Iniciando a classe data"""
@@ -40,3 +40,8 @@ class datas:
         # Minutos em formato decimal
         data_formatada = self.momento_cadastro.strftime("%d/%m/%Y %H:%M")
         return data_formatada
+
+    def tempo_cadastro(self):
+        """realiza a subtracao"""
+        tempo_cadastro = (datetime.today() + timedelta(days=30)) - self.momento_cadastro
+        return tempo_cadastro
