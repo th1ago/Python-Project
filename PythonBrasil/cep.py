@@ -1,3 +1,6 @@
+"""trabalhando com cep"""
+import requests
+
 class busca_cep:
     """trabalhndo com cep"""
     def __init__(self, cep):
@@ -16,7 +19,18 @@ class busca_cep:
             return True
         else:
             return False
-    
+
     def format_cep(self):
         """formata cep"""
         return f"{self.cep[:5]}-{self.cep[5:]}"
+
+    def acessa_cep(self):
+        """request cep"""
+        url = (f'https://viacep.com.br/ws/{self.cep}/json/')
+        pedido = requests.get(url, timeout=10)
+        dados = pedido.json()
+        return (
+            dados['bairro'],
+            dados['localidade'],
+            dados['uf']
+        )

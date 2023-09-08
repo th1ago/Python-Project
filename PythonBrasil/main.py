@@ -16,6 +16,9 @@
 
 from cep import busca_cep
 
-cep = "25689328"
+cep = "01001000"
 obj_cep = busca_cep(cep)
-print(obj_cep)
+
+bairro, cidade, uf = obj_cep.acessa_cep()
+
+print(bairro, cidade, uf)
