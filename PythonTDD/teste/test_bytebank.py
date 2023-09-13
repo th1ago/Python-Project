@@ -1,5 +1,7 @@
-from bytebank import Funcionario
+'''teste bytebank'''
 import pytest
+from pytest import mark
+from bytebank import Funcionario
 
 class TestCalss:
     """criando class de teste"""
@@ -36,6 +38,7 @@ class TestCalss:
 
         assert resultado == esperado #then
 
+    @mark.calcular_bonus
     def test_salario_for_igual_1000_retorna_100(self):
         """verifica bonus se for ate 1000 e aplica 10%"""
         entrada = 1000 #given
@@ -46,6 +49,7 @@ class TestCalss:
 
         assert resultado == esperado #then
 
+    @mark.calcular_bonus
     def test_salario_for_igual_10000000_retorna_valueerror(self):
         """verifica bonus se for ate 1000 e aplica 10%"""
         with pytest.raises(ValueError):
