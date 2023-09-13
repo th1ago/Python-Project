@@ -1,10 +1,16 @@
 # Pytest
-- Executar o comando *pytest* no terminal. No retorno vai teremos *teste\test_bytebank.py .* > A quantidade de ponto refere a quantidade de teste
+- Executar o comando *pytest* no terminal. No retorno teremos *teste\test_bytebank.py .*, a quantidade de ponto refere a quantidade de teste
 - Outra alternativa é acrescentar *pytest -v*, de verbose. Receberemos um retorno mais detalhado
 - Executando o teste selecionando alguns item *pytest -v -k {uma_palavra_teste}*
+- Para verificar a cobertuda instale o pytest-cov e execute o comando *pytest --cov*
+- Explicando a linha do codigo que nao esta cobert *pytest --cov=codigo tests/ --cov-report term-missing*
+- Gerando um report *pytest --cov=codigo tests/ --cov-report html* cria uma pasta htmlcov
+- Para excluir teste, criar uma pasta *.coveragerc* informando as linha a serem excluida no teste
+- Criando um relatorio *pytest --cov-report xml*
+
 
 ## markers
-- Outra forma de executar o teste selecionando *pytest -v -m {palavra_definida}* no file *.ini*
+- Outra forma de executar o teste selecionando *pytest -v -m {palavra_definida}* no arquivo *.ini*
 
 ### skip
 ```

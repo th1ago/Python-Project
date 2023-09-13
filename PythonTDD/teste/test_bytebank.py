@@ -1,7 +1,7 @@
 '''teste bytebank'''
 import pytest
 from pytest import mark
-from bytebank import Funcionario
+from codigo.bytebank import Funcionario
 
 class TestCalss:
     """criando class de teste"""
