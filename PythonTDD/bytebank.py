@@ -31,11 +31,22 @@ class Funcionario:
         # ultimo item da lista
         return nome_quebrado[-1]
 
+    def _eh_socio(self):
+        """verifica se eh socio"""
+        sobrenomes = ['Silva', 'Yakult', 'Silveira', 'Barbosa']
+        return ( self._salario >= 1000) and (self.sobrenome() in sobrenomes)
+
+    def decrescimo_salario(self):
+        """decrescimo salario"""
+        if self._eh_socio():
+            decrescimo = self._salario * 0.1
+            self._salario = self._salario - decrescimo
+
     def calcular_bonus(self):
         """declaracao bonus"""
         valor = self._salario * 0.1
         if valor > 1000:
-            valor = 0
+            raise ValueError('O bonus somente aplicado em salarios maior que 1.000')
         return valor
 
     def __str__(self):
