@@ -24,14 +24,14 @@ Para todo magico na lista de magicos, exiba o nome do magico
 - Insere um elemento na lista, na posicao desejada ```[index, x]```
 ### append()
 - Concatena no final da lista
-### extend()
+### extend() 
 - Extende a lista 
 ### del()
 - Remove elemento da lista
 ### pop()
-- Remove um item da lista, mas permite que voce trabalhe com ela
+- Remove um elemento da lista, pelo indice
 ### remove()
-- Remove o primeiro item da lista de acordo com o valor
+- Remove um elemento da lista, pelo valor
 
 # 📫 Collection
 - `Funcao_1:` quando informar o param *args == tupla 
