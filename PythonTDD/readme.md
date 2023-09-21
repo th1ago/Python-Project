@@ -8,6 +8,15 @@
 - Para excluir teste, criar uma pasta *.coveragerc* informando as linha a serem excluida no teste
 - Criando um relatorio *pytest --cov-report xml*
 
+## Instalacao
+```pip install pytest==7.1.2```
+```pip install pytest-cov==3.0.0```
+```pip freeze > requeriments.txt```
+
+### Garantindo a cobertura
+- Na aula anterior, aprendemos que é possível acrescentar a tag ```--cov=codigo tests/``` para especificar ao pytest-cov o diretório em que queremos rodar o escaneamento de cobertura de testes. 
+- Para especificar outro tipo de relatório, que exibirá os termos faltantes para os 100% de cobertura.```pytest --cov=codigo tests/ --cov-report term-missing```
+- Relatorioa mais visual ```pytest --cov=codigo tests/ --cov-report html```
 
 ## markers
 - Outra forma de executar o teste selecionando *pytest -v -m {palavra_definida}* no arquivo *.ini*
