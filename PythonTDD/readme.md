@@ -9,12 +9,14 @@
 - Criando um relatorio *pytest --cov-report xml*
 
 ## Instalacao
-```pip install pytest==7.1.2```
-```pip install pytest-cov==3.0.0```
-```pip freeze > requeriments.txt```
+```
+pip install pytest==7.1.2
+pip install pytest-cov==3.0.0
+pip freeze > requeriments.txt
+```
 
 ### Garantindo a cobertura
-- Na aula anterior, aprendemos que é possível acrescentar a tag ```--cov=codigo tests/``` para especificar ao pytest-cov o diretório em que queremos rodar o escaneamento de cobertura de testes. 
+- E possível acrescentar a tag ```--cov=codigo tests/``` para especificar ao pytest-cov o diretório em que queremos rodar o escaneamento de cobertura de testes. 
 - Para especificar outro tipo de relatório, que exibirá os termos faltantes para os 100% de cobertura.```pytest --cov=codigo tests/ --cov-report term-missing```
 - Relatorioa mais visual ```pytest --cov=codigo tests/ --cov-report html```
 
